@@ -52,3 +52,19 @@
 - 完整目录以 `v7.6.13-full-2026-04-14` Release 资产形式保存。
 - 仓库当前可见性为公开。
 - 后续新增版本时，应继续沿用“分支放说明、Release 放完整产物”的模式。
+
+## 2026-04-14：为 app.asar 单独提供压缩分卷下载
+
+### 原因
+
+- `app.asar` 原始体积接近 `500 MB`，直接下载成功率不理想。
+- 实测压缩后可降到约 `210 MB`，适合继续切成多个更小的分卷。
+
+### 影响
+
+- 当前 Release 额外提供 `app.asar.zip` 与 3 个分卷文件。
+- 仓库内新增：
+  - `scripts/build-app-asar-assets.ps1`
+  - `scripts/merge-app-asar-parts.ps1`
+  - `DOWNLOAD_APP_ASAR.md`
+- 后续如果 `app.asar` 仍需单独分发，默认继续沿用该方案。

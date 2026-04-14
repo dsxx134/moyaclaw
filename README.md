@@ -18,10 +18,21 @@
 - GitHub 仓库：`https://github.com/dsxx134/moyaclaw`
 - 当前 Release：`v7.6.13-full-2026-04-14`
 
+## app.asar 下载
+
+- 原始 `app.asar` 约 `498 MB`
+- 已额外提供 `app.asar.zip`，压缩后约 `210 MB`
+- 已额外提供分卷：
+  - `app.asar.zip.part01`
+  - `app.asar.zip.part02`
+  - `app.asar.zip.part03`
+- 恢复说明见 `DOWNLOAD_APP_ASAR.md`
+
 ## 仓库内容
 
 - `AGENTS.md`：项目协作规则
 - `ARCHITECTURE.md`：架构理解
+- `DOWNLOAD_APP_ASAR.md`：`app.asar` 分卷下载与恢复说明
 - `MEMORY.md`：长期经验
 - `DECISIONS.md`：技术决策
 - `TASKS.md`：后续待办

@@ -1,9 +1,12 @@
 *
 !.gitignore
 !README.md
+!DOWNLOAD_APP_ASAR.md
 !AGENTS.md
 !ARCHITECTURE.md
 !DECISIONS.md
 !MEMORY.md
 !TASKS.md
 !UPLOAD_TO_GITHUB.md
+!scripts/
+!scripts/*.ps1

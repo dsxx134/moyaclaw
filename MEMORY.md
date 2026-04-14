@@ -37,3 +37,14 @@
   - `moyaclaw-7.6.13-full-2026-04-14.tar`
   - `moyaclaw-7.6.13-full-2026-04-14.tar.sha256`
 - 结论：对于此类大体积发布目录，优先把完整快照放到 Release，而不是尝试直接进入 Git 历史。
+
+## app.asar 分发经验
+
+- `resources/app.asar` 原始大小约 `498642204` 字节，直接分发不友好。
+- 将 `app.asar` 压缩为 `zip` 后，体积降到约 `219811454` 字节。
+- 再按 `95 MB` 分卷后，可以稳定拆成 3 个下载片段：
+  - `app.asar.zip.part01`
+  - `app.asar.zip.part02`
+  - `app.asar.zip.part03`
+- 分卷恢复后重新解压，得到的 `app.asar` 与原文件 `sha256` 一致。
+- 结论：对这个仓库里的 `app.asar`，最稳妥的分发方式是“zip 压缩 + 95MB 分卷 + manifest + 恢复脚本”。
