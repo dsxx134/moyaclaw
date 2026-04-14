@@ -14,6 +14,8 @@
 - 版本：`7.6.13.0`
 - 目录来源：`D:\moyaclaw`
 - 发布形式：完整目录归档作为 Release 附件
+- GitHub 仓库：`https://github.com/dsxx134/moyaclaw`
+- 当前 Release：`v7.6.13-full-2026-04-14`
 
 ## 仓库内容
 

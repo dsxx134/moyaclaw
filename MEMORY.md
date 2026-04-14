@@ -28,3 +28,12 @@
 
 - 当前应用更新源配置在 `resources/app-update.yml`，使用 `generic` provider，而不是 GitHub Releases。
 - 这意味着“上传到 GitHub”更像是代码/归档托管行为，不会自动接入现有应用更新链路。
+
+## 已验证的发布方案
+
+- 已成功创建私有仓库 `dsxx134/moyaclaw`。
+- 已验证“轻量默认分支 + 完整目录 Release 附件”方案可行。
+- 已成功上传：
+  - `moyaclaw-7.6.13-full-2026-04-14.tar`
+  - `moyaclaw-7.6.13-full-2026-04-14.tar.sha256`
+- 结论：对于此类大体积发布目录，优先把完整快照放到 Release，而不是尝试直接进入 Git 历史。
